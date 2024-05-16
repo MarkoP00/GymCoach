@@ -1,4 +1,4 @@
-import { createRouter,createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import StartingPage from './components/StartingPage.vue';
 import SetUser from './components/SetUser.vue';
 import BicepsCurl from './components/BicepsCurl.vue'; 
@@ -10,7 +10,7 @@ import CaloriesBurn from './components/CaloriesBurn.vue';
 import StopWatch from './components/StopWatch.vue'; 
 import AboutPage from "./other/AboutPage.vue";
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
 
     routes: [
         {
