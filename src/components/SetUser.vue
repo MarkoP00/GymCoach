@@ -124,7 +124,7 @@ async function submitData(){
     localStorage.setItem('userlevel', formData.level.value);
     console.log(response);
     popTitle.value = 'Success!';
-    popMessage.value = 'Our app will help you in performing your exercises!'
+    popMessage.value = 'Our app will assist you while performing your exercises!'
    }else{
     spinnerIsActive.value = false;
     popTitle.value = 'Fail!';
