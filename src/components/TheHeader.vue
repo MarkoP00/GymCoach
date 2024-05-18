@@ -15,6 +15,9 @@
                 <Transition name="fade">
                     <ul class="submenu" v-if="submenuVisible" @click.stop>
                       <li>
+                        <router-link to="/stop-watch">StopWatch</router-link>
+                      </li>
+                      <li>
                         <router-link to="/biceps">Biceps curls</router-link>
                       </li>
                       <li>
@@ -22,9 +25,6 @@
                       </li>
                       <li>
                         <router-link to="/chest">Chest press</router-link>
-                      </li>
-                      <li>
-                        <router-link to="/stop-watch">StopWatch</router-link>
                       </li>
                         <li>
                           <router-link to="/weight">Weight tracker</router-link>
@@ -51,7 +51,7 @@
         <div v-if="dropDownMenuVisible" class="dropDown">
           <li><router-link to="/starting-page">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
-            <li @click="toggleSubmenu"><a href="#">Services <svg style="height: 16px; margin-left: 2px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#66fcf1" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></a>
+            <li @click="toggleSubmenu"><a href="#" @click.prevent>Services <svg style="height: 16px; margin-left: 2px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#66fcf1" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></a>
               <ul class="submenu" v-if="submenuVisible" @click.stop>
                       <li>
                         <router-link to="/biceps">Biceps curls</router-link>
